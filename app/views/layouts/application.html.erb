@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TITLE |　Details</title>
+    <!-- metaタグはページの各種付加情報を定義する -->
+    <meta charset="utf-8">
+    <!-- 解像度の話 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- mediaとdata~はどこから？ -->
+    <%= stylesheet_link_tag "application",media:"all","data-turbolinks-track" => true %>
+    <!-- ディレクトリ内のjsを全て読み込む宣言 -->
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': true %>
+    <!-- Webアプリケーションに存在する脆弱性を利用した攻撃の対策のために記述 -->
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <!-- navbar-default:淡色ナビゲーションバー role:Webページの構成内である役割を担う要素に対し目印をつける -->
+    <header class="navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <%= link_to 'AwesomeEvents',root_path, class: 'navbar-brand' %>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>
