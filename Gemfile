@@ -17,6 +17,11 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.0.0.beta'
 gem 'jquery-rails'
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+gem 'sprockets-rails', '~> 3.2.0'
 
 
 
